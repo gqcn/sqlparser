@@ -1,4 +1,4 @@
-module github.com/longbridgeapp/sqlparser
+module github.com/gqcn/sqlparser
 
 go 1.16
 

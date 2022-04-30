@@ -98,7 +98,7 @@ func (p *Parser) parseInsertStatement() (_ *InsertStatement, err error) {
 	var stmt InsertStatement
 
 	if p.peek() != INTO {
-		return &stmt, p.errorExpected(p.pos, p.tok, "INTO")
+		//return &stmt, p.errorExpected(p.pos, p.tok, "INTO")
 	}
 	p.lex()
 
@@ -214,7 +214,7 @@ func (p *Parser) parseUpsertClause() (_ *UpsertClause, err error) {
 	// Parse "ON CONFLICT"
 	p.lex()
 	if p.peek() != CONFLICT {
-		return &clause, p.errorExpected(p.pos, p.tok, "CONFLICT")
+		//return &clause, p.errorExpected(p.pos, p.tok, "CONFLICT")
 	}
 	p.lex()
 

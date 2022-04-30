@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/go-test/deep"
-	"github.com/longbridgeapp/sqlparser"
+	"github.com/gqcn/sqlparser"
 )
 
 func TestParser_ParseStatement(t *testing.T) {
